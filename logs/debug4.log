@@ -1,0 +1,16 @@
+INFO 2020-04-18 13:16:24,906 autoreload 30416 30600 Watching for file changes with StatReloader
+INFO 2020-04-18 13:16:44,497 views 30416 172 >>>>>>>>>>>>>> Something Debug wrong!
+INFO 2020-04-18 13:16:44,500 basehttp 30416 172 "GET /addUser HTTP/1.1" 200 26
+WARNING 2020-04-18 13:16:45,535 views 30416 29932 Something warning wrong!
+INFO 2020-04-18 13:16:45,536 basehttp 30416 29932 "GET /addSomething HTTP/1.1" 200 31
+INFO 2020-04-18 13:16:46,566 views 30416 28720 Something info2 wrong!
+INFO 2020-04-18 13:16:46,567 basehttp 30416 28720 "GET /addNew/17 HTTP/1.1" 200 54
+ERROR 2020-04-18 13:16:47,685 log 30416 16200 Internal Server Error: /addNewError/17
+Traceback (most recent call last):
+  File "C:\Users\swsh\AppData\Local\Continuum\anaconda3\envs\py36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\swsh\AppData\Local\Continuum\anaconda3\envs\py36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view firstAPI.views.addNewError didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-04-18 13:16:47,689 basehttp 30416 16200 "GET /addNewError/17 HTTP/1.1" 500 60188
+INFO 2020-04-18 13:17:53,015 autoreload 30416 30600 C:\Users\swsh\Desktop\Projects\djangoLogging\djangoLogging\settings.py changed, reloading.

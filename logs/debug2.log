@@ -1,0 +1,21 @@
+INFO 2020-04-18 13:03:51,399 autoreload 18852 29876 Watching for file changes with StatReloader
+INFO 2020-04-18 13:04:12,484 basehttp 18852 9924 "GET /addUser HTTP/1.1" 200 26
+INFO 2020-04-18 13:04:13,518 basehttp 18852 22512 "GET /addSomething HTTP/1.1" 200 31
+INFO 2020-04-18 13:04:14,538 basehttp 18852 27908 "GET /addNew/3 HTTP/1.1" 200 53
+ERROR 2020-04-18 13:04:15,669 log 18852 16140 Internal Server Error: /addNewError/0
+Traceback (most recent call last):
+  File "C:\Users\swsh\AppData\Local\Continuum\anaconda3\envs\py36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\swsh\AppData\Local\Continuum\anaconda3\envs\py36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view firstAPI.views.addNewError didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-04-18 13:04:15,677 basehttp 18852 16140 "GET /addNewError/0 HTTP/1.1" 500 60177
+INFO 2020-04-18 13:07:24,969 autoreload 18852 29876 C:\Users\swsh\Desktop\Projects\djangoLogging\djangoLogging\settings.py changed, reloading.
+INFO 2020-04-18 13:07:26,092 autoreload 25092 11928 Watching for file changes with StatReloader
+INFO 2020-04-18 13:07:35,884 autoreload 25092 11928 C:\Users\swsh\Desktop\Projects\djangoLogging\djangoLogging\settings.py changed, reloading.
+INFO 2020-04-18 13:07:37,203 autoreload 26220 30268 Watching for file changes with StatReloader
+INFO 2020-04-18 13:12:04,683 autoreload 26220 30268 C:\Users\swsh\Desktop\Projects\djangoLogging\firstAPI\views.py changed, reloading.
+INFO 2020-04-18 13:12:06,164 autoreload 25508 26468 Watching for file changes with StatReloader
+INFO 2020-04-18 13:12:40,767 autoreload 25508 26468 C:\Users\swsh\Desktop\Projects\djangoLogging\firstAPI\views.py changed, reloading.
+INFO 2020-04-18 13:12:42,027 autoreload 27064 30384 Watching for file changes with StatReloader
+INFO 2020-04-18 13:12:48,664 autoreload 27064 30384 C:\Users\swsh\Desktop\Projects\djangoLogging\djangoLogging\settings.py changed, reloading.

@@ -1,0 +1,30 @@
+INFO 2020-04-18 13:12:50,057 autoreload 10576 30484 Watching for file changes with StatReloader
+INFO 2020-04-18 13:13:23,296 views 10576 25744 Some messgae
+INFO 2020-04-18 13:13:23,297 basehttp 10576 25744 "GET /addUser HTTP/1.1" 200 26
+INFO 2020-04-18 13:14:47,057 views 10576 22732 Some messgae
+INFO 2020-04-18 13:14:47,068 basehttp 10576 22732 "GET /addUser HTTP/1.1" 200 26
+INFO 2020-04-18 13:14:48,095 basehttp 10576 5960 "GET /addSomething HTTP/1.1" 200 31
+INFO 2020-04-18 13:14:49,134 basehttp 10576 16932 "GET /addNew/17 HTTP/1.1" 200 54
+ERROR 2020-04-18 13:14:50,263 log 10576 26296 Internal Server Error: /addNewError/31
+Traceback (most recent call last):
+  File "C:\Users\swsh\AppData\Local\Continuum\anaconda3\envs\py36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\swsh\AppData\Local\Continuum\anaconda3\envs\py36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view firstAPI.views.addNewError didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-04-18 13:14:50,266 basehttp 10576 26296 "GET /addNewError/31 HTTP/1.1" 500 60188
+INFO 2020-04-18 13:15:11,230 views 10576 17452 Some messgae
+INFO 2020-04-18 13:15:11,231 basehttp 10576 17452 "GET /addUser HTTP/1.1" 200 26
+INFO 2020-04-18 13:15:12,272 basehttp 10576 25112 "GET /addSomething HTTP/1.1" 200 31
+INFO 2020-04-18 13:15:13,293 basehttp 10576 26764 "GET /addNew/42 HTTP/1.1" 200 54
+ERROR 2020-04-18 13:15:14,407 log 10576 29124 Internal Server Error: /addNewError/67
+Traceback (most recent call last):
+  File "C:\Users\swsh\AppData\Local\Continuum\anaconda3\envs\py36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\swsh\AppData\Local\Continuum\anaconda3\envs\py36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view firstAPI.views.addNewError didn't return an HttpResponse object. It returned None instead.
+ERROR 2020-04-18 13:15:14,408 basehttp 10576 29124 "GET /addNewError/67 HTTP/1.1" 500 60188
+INFO 2020-04-18 13:15:54,720 autoreload 10576 30484 C:\Users\swsh\Desktop\Projects\djangoLogging\firstAPI\views.py changed, reloading.
+INFO 2020-04-18 13:15:56,027 autoreload 18808 20436 Watching for file changes with StatReloader
+INFO 2020-04-18 13:16:23,601 autoreload 18808 20436 C:\Users\swsh\Desktop\Projects\djangoLogging\djangoLogging\settings.py changed, reloading.
